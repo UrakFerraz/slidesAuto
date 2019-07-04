@@ -1,0 +1,155 @@
+.boxModel {
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	display: grid;
+	grid-auto-flow: column;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar { 
+    display: none;
+}
+
+h1, button {
+	font-family: 'Russo One', sans-serif;
+	outline: none;
+}
+
+.slide {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	transition: transform 1s cubic-bezier(1, 0, 0, 1);
+}
+
+.slide:nth-of-type(1) {
+	background: linear-gradient(to right, rgba(58,96,115,.7), rgba(22,34,42,.8)), url(https://source.unsplash.com/1920x1080/?food);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-origin: border-box;
+	background-blend-mode: color;
+}
+
+.slide:nth-of-type(2) {
+	background: linear-gradient(to right, rgba(58,96,115,.7), rgba(22,34,42,.8)), url(https://source.unsplash.com/1920x1080/?nature);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-origin: border-box;
+	background-blend-mode: color;
+}
+
+.slide:nth-of-type(3) {
+	background: linear-gradient(to right, rgba(58,96,115,.7), rgba(22,34,42,.8)), url(https://source.unsplash.com/1920x1080/?computer);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-origin: border-box;
+	background-blend-mode: color;
+}
+
+.slide:nth-of-type(4) {
+	background: linear-gradient(to right, rgba(58,96,115,.7), rgba(22,34,42,.8)), url(https://source.unsplash.com/1920x1080/?landscape);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-origin: border-box;
+	background-blend-mode: color;
+}
+
+.slide:nth-of-type(5) {
+	background: linear-gradient(to right, rgba(58,96,115,.7), rgba(22,34,42,.8)), url(https://source.unsplash.com/1920x1080/?city);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-origin: border-box;
+	background-blend-mode: color;
+}
+
+.slide:nth-of-type(6) {
+	background: linear-gradient(to right, rgba(58,96,115,.7), rgba(22,34,42,.8)), url(https://source.unsplash.com/1920x1080/?sports);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-origin: border-box;
+	background-blend-mode: color;
+}
+
+h1 {
+	font-size: 40px;
+	color: #fff;
+	text-shadow: 0 0 15px black;
+}
+
+.slide button {
+	text-decoration: none;
+	border-radius: 10px;
+	border: none;
+	background-color: #efefef;
+	font-size: 20px;
+	padding: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	cursor: pointer;
+	transition: 0.3s ease all;
+}
+
+.slide button:hover {
+	transform: scale(.97);
+	background-color: #b9dbd4;
+}
+
+.btnsArrowsWrapper {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	padding: 20px;
+	box-sizing: border-box;
+	z-index: 2;
+	pointer-events: none;
+}
+
+.btnsArrowsWrapper button {
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	pointer-events: all;
+	box-sizing: border-box;
+	display: block;
+	position: relative;
+}
+
+.btnsArrowsWrapper button svg {
+	box-sizing: border-box;
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: relative;
+}
+
+
+
